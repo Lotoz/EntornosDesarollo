@@ -1,0 +1,59 @@
+
+PASOS DE GIT ANOTACION.
+Zamira@DESKTOP-ODGCDR3 MINGW64 ~/GitHub/EntornosDesarollo (main)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config advice.addEmptyPathspec false"
+
+Zamira@DESKTOP-ODGCDR3 MINGW64 ~/GitHub/EntornosDesarollo (main)
+$ git add fichero1
+warning: in the working copy of 'fichero1', LF will be replaced by CRLF the next time Git touches it
+
+Zamira@DESKTOP-ODGCDR3 MINGW64 ~/GitHub/EntornosDesarollo (main)
+$ git commit
+Aborting commit due to empty commit message.
+
+Zamira@DESKTOP-ODGCDR3 MINGW64 ~/GitHub/EntornosDesarollo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   fichero1
+
+
+Zamira@DESKTOP-ODGCDR3 MINGW64 ~/GitHub/EntornosDesarollo (main)
+$ git commit -m "Anexando archivo de prueba"
+[main 88458f3] Anexando archivo de prueba
+ 1 file changed, 1 insertion(+)
+ create mode 100644 fichero1
+
+Zamira@DESKTOP-ODGCDR3 MINGW64 ~/GitHub/EntornosDesarollo (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Zamira@DESKTOP-ODGCDR3 MINGW64 ~/GitHub/EntornosDesarollo (main)
+$ git push\
+> ^C
+
+Zamira@DESKTOP-ODGCDR3 MINGW64 ~/GitHub/EntornosDesarollo (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 322 bytes | 322.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Lotoz/EntornosDesarollo.git
+   e059635..88458f3  main -> main
+
+Zamira@DESKTOP-ODGCDR3 MINGW64 ~/GitHub/EntornosDesarollo (main)
+$ ^C
+
+Zamira@DESKTOP-ODGCDR3 MINGW64 ~/GitHub/EntornosDesarollo (main)
